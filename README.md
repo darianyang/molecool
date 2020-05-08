@@ -13,6 +13,9 @@ This repository is currently under development. To developmental install, downlo
 
 in the repository directory.
 
+This package reqiures the following:
+- Numpy
+- Matplotlib
 
 ### Copyright
 
