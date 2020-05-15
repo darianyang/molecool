@@ -100,3 +100,7 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# temporary data files
+*.in
+*.out
