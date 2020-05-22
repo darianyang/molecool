@@ -5,6 +5,7 @@ A python package for analyzing and visualizing pdb and xyz files. For MolSSI May
 Handles the primary functions
 """
 
+
 # placeholder function
 def canvas(with_attribution=True):
     """
