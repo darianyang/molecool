@@ -16,7 +16,7 @@ def open_pdb(f_loc):
     Returns
     -------
     sym : list
-    coords : ndarray 
+    coords : ndarray
 
     Examples
     --------
@@ -32,9 +32,10 @@ def open_pdb(f_loc):
         if 'ATOM' in l[0:6] or 'HETATM' in l[0:6]:
             sym.append(l[76:79].strip())
             try:
+                # list comprehension: for x in list_object: --> float(x)
                 c2 = [float(x) for x in l[30:55].split()]
-            except:
-                print("error in pdb file formatting")
+            except ValueError as e:
+                raise ValueError(F"error in pdb file {f_loc} formatting.\n {e}")
             else:
                 c.append(c2)
     coords = np.array(c)

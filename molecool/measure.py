@@ -1,4 +1,4 @@
-""" 
+"""
 Functions for measurements and building bond lists.
 """
 
@@ -13,7 +13,7 @@ def calculate_distance(rA, rB):
     ----------
     rA, rB : np.ndarray
         The coordinates of each point.
-    
+
     Returns
     -------
     distance : float
@@ -27,27 +27,29 @@ def calculate_distance(rA, rB):
     1.0
 
     """
-    # can access doc string with 
+    # can access doc string with
         # >>> help(molecool.calculate_distance)
         # >>> molecool.calculate_distance.__doc__
         # >>> print(molecool.calculate_distance.__doc__)
 
     # This function calculates the distance between two points given as numpy arrays.
-    
-    if isinstance(rA, np.ndarray) is False or isinstance(rB, np.ndarray is False):
-        raise TypeError("rA abd rB must be numpy arrays")
+
+    #if isinstance(rA, np.ndarray) is False or isinstance(rB, np.ndarray is False):
+     #   raise TypeError("rA abd rB must be numpy arrays")
 
     d=(rA-rB)
     dist=np.linalg.norm(d)
 
+    """
     if dist == 0.0:
         raise Exception("Two atoms are located at the same point")
+    """
 
     return dist
 
 def calculate_angle(rA, rB, rC, degrees=False):
     """
-    Calculate the angle between three points. 
+    Calculate the angle between three points.
     Answer is given in radians by default, but can be given in degrees
     by setting degrees=True.
 
@@ -60,10 +62,6 @@ def calculate_angle(rA, rB, rC, degrees=False):
     -------
     theta : float
         The angle between three points.
-
-    Examples
-    --------
-    >>> 
 
     """
     # Calculate the angle between three points. Answer is given in radians by default, but can be given in degrees
