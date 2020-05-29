@@ -5,6 +5,8 @@ Functions for measurements and building bond lists.
 import numpy as np
 
 # example of numpy style docstring
+# pytest can run examples section of docstring
+# $ pytest -v --doctest-modules "dir"
 def calculate_distance(rA, rB):
     """
     Calculate the distance between two points.
