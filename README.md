@@ -2,7 +2,6 @@ molecool
 ==============================
 [//]: # (Badges)
 [![Travis Build Status](https://travis-ci.com/darianyang/molecool.svg?branch=master)](https://travis-ci.com/darianyang/molecool)
-[![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/REPLACE_WITH_APPVEYOR_LINK/branch/master?svg=true)](https://ci.appveyor.com/project/darianyang/molecool/branch/master)
 [![codecov](https://codecov.io/gh/darianyang/molecool/branch/master/graph/badge.svg)](https://codecov.io/gh/darianyang/molecool/branch/master)
 
 A python package for analyzing and visualizing pdb and xyz files. For MolSSI May webinar series.
