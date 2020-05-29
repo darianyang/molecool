@@ -13,6 +13,10 @@ import sys
 # produces .coverage binary file to be used by other tools to visualize 
 # do not need 100% coverage, 80-90% is very high
 
+# can have report in 
+# $ pytest -v --cov=molecool --cov-report=html
+# index.html to better visualize the test coverage
+
 # decorator to skip in pytest
 #@pytest.mark.skip
 def test_calculate_distance():
@@ -56,6 +60,21 @@ def test_calculate_angle(r1, r2, r3, expected_angle):
     calculated_angle = molecool.calculate_angle(r1, r2, r3, degrees=True)
 
     # floating point comparisons
+    assert pytest.approx(expected_angle) == calculated_angle
+
+@pytest.mark.parametrize(
+    "r1, r2, r3, expected_angle",
+    # list of vars to test for r1,r2,r3,angle
+    [
+        (np.array([0, 0, -1]), np.array([0, 0, 0]), np.array([0, 1, 0]), np.radians(90)),
+        (np.array([0, 0, -1]), np.array([0, 1, 0]), np.array([1, 0, 0]), np.radians(60))
+    ]
+)
+def test_calculate_angle_radians(r1, r2, r3, expected_angle):
+    """
+    Test of angle calculation in radians.
+    """
+    calculated_angle = molecool.calculate_angle(r1, r2, r3)
     assert pytest.approx(expected_angle) == calculated_angle
 
 def test_center_of_mass():
