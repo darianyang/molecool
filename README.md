@@ -4,6 +4,9 @@ molecool
 [![Travis Build Status](https://travis-ci.com/darianyang/molecool.svg?branch=master)](https://travis-ci.com/darianyang/molecool)
 [![codecov](https://codecov.io/gh/darianyang/molecool/branch/master/graph/badge.svg)](https://codecov.io/gh/darianyang/molecool/branch/master)
 
+https://darianyang.github.io/molecool/ 
+https://molecool-dty.readthedocs.io/en/latest/index.html
+
 A python package for analyzing and visualizing pdb and xyz files. For MolSSI May webinar series.
 
 This repository is currently under development. To developmental install, download this repository adn type:
