@@ -12,7 +12,7 @@ Welcome to molecool's documentation!
 
    getting_started
    api
-
+   quickstart
 
 
 Indices and tables
