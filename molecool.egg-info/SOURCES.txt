@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+molecool/__init__.py
+molecool/_version.py
+molecool/functions.py
+molecool.egg-info/PKG-INFO
+molecool.egg-info/SOURCES.txt
+molecool.egg-info/dependency_links.txt
+molecool.egg-info/top_level.txt
+molecool/data/README.md
+molecool/data/look_and_say.dat
+molecool/tests/__init__.py
+molecool/tests/test_molecool.py

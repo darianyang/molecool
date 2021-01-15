@@ -1,0 +1,16 @@
+[
+  "molecool/tests/test_molecool.py::test_molecool_imported",
+  "molecool/tests/test_measure.py::test_calculate_distance",
+  "molecool/tests/test_measure.py::test_calculate_angle",
+  "molecool/tests/test_molecule.py::test_build_bond_list",
+  "molecool/tests/test_molecule.py::test_build_bond_failure",
+  "molecool/tests/test_molecule.py::test_molecular_mass",
+  "molecool/tests/test_measure.py::test_center_of_mass",
+  "molecool/tests/test_molecule.py::test_move_methane",
+  "molecool/tests/test_measure.py::test_calculate_angle[r10-r20-r30-90]",
+  "molecool/tests/test_measure.py::test_calculate_angle[r11-r21-r31-60]",
+  "molecool/measure.py::molecool.measure.calculate_distance",
+  "molecool/io/pdb.py::molecool.io.pdb.open_pdb",
+  "molecool/tests/test_measure.py::test_calculate_angle_radians[r10-r20-r30-1.5707963267948966]",
+  "molecool/tests/test_measure.py::test_calculate_angle_radians[r11-r21-r31-1.0471975511965976]"
+]

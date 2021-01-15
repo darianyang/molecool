@@ -1,0 +1,4 @@
+{
+  "devtools/scripts/create_conda_env.py": true,
+  "molecool/io/pdb.py::molecool.io.pdb.open_pdb": true
+}
